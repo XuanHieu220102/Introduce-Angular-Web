@@ -1,0 +1,76 @@
+<section class="page-hero">
+    <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+    <div class="container">
+        <span class="section-badge">Về chúng tôi</span>
+        <h1>Đội ngũ đam mê công nghệ</h1>
+        <p>Chúng tôi là những người yêu công nghệ, cam kết mang đến những giải pháp tốt nhất cho khách hàng</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Câu chuyện của chúng tôi</h2>
+                <p>
+                    TechFlow được thành lập từ năm 2020 với sứ mệnh mang công nghệ tiên tiến đến gần hơn với mọi doanh
+                    nghiệp.
+                    Sau hơn 5 năm phát triển, chúng tôi tự hào đã đồng hành cùng hàng trăm doanh nghiệp trong hành trình
+                    chuyển đổi số.
+                </p>
+                <p>
+                    Đội ngũ của chúng tôi gồm những kỹ sư giàu kinh nghiệm, luôn cập nhật các công nghệ mới nhất và
+                    không
+                    ngừng học hỏi để mang đến những giải pháp tối ưu nhất.
+                </p>
+                <div class="about-stats">
+                    @for (stat of stats; track stat.label) {
+                    <div class="about-stat">
+                        <span class="stat-value">{{ stat.value }}</span>
+                        <span class="stat-label">{{ stat.label }}</span>
+                    </div>
+                    }
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <span>🚀</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="values-section">
+    <div class="container">
+        <h2>Giá trị cốt lõi</h2>
+        <div class="values-grid">
+            @for (value of values; track value.title) {
+            <div class="value-card">
+                <span class="value-icon">{{ value.icon }}</span>
+                <h3>{{ value.title }}</h3>
+                <p>{{ value.description }}</p>
+            </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="team-section">
+    <div class="container">
+        <h2>Đội ngũ của chúng tôi</h2>
+        <div class="team-grid">
+            @for (member of team; track member.name) {
+            <div class="team-card">
+                <div class="member-avatar">{{ member.avatar }}</div>
+                <h4>{{ member.name }}</h4>
+                <p class="member-role">{{ member.role }}</p>
+                <p class="member-bio">{{ member.bio }}</p>
+            </div>
+            }
+        </div>
+    </div>
+</section>

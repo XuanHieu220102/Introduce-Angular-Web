@@ -1,0 +1,99 @@
+<!-- Hero Section -->
+<section class="hero">
+    <!-- Animated Background -->
+    <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-pattern"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="badge-icon">✨</span>
+            <span>Công nghệ tiên tiến 2026</span>
+        </div>
+        <h1 class="hero-title">
+            Xây dựng tương lai với
+            <span class="text-gradient">Angular</span>
+        </h1>
+        <p class="hero-description">
+            Nền tảng phát triển web hiện đại, mạnh mẽ và linh hoạt. Tạo ra những ứng dụng
+            tuyệt vời với trải nghiệm người dùng đỉnh cao.
+        </p>
+        <div class="hero-buttons">
+            <a routerLink="/services" class="btn btn-primary btn-lg">
+                <span>Khám phá ngay</span>
+                <span class="btn-arrow">→</span>
+            </a>
+            <a routerLink="/about" class="btn btn-outline btn-lg">
+                <span class="play-icon">▶</span>
+                <span>Tìm hiểu thêm</span>
+            </a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">10K+</span>
+                <span class="stat-label">Người dùng</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Dự án</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-number">99%</span>
+                <span class="stat-label">Hài lòng</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Cards -->
+    <div class="floating-card card-1">
+        <div class="card-icon">⚡</div>
+        <span>Hiệu suất cao</span>
+    </div>
+    <div class="floating-card card-2">
+        <div class="card-icon">🛡️</div>
+        <span>Bảo mật tốt</span>
+    </div>
+    <div class="floating-card card-3">
+        <div class="card-icon">🎨</div>
+        <span>Giao diện đẹp</span>
+    </div>
+</section>
+
+<!-- Quick Features Preview -->
+<section class="features-preview">
+    <div class="container">
+        <div class="preview-grid">
+            @for (feature of previewFeatures; track feature.title) {
+            <div class="preview-card">
+                <div class="preview-icon">{{ feature.icon }}</div>
+                <h3>{{ feature.title }}</h3>
+                <p>{{ feature.description }}</p>
+            </div>
+            }
+        </div>
+        <a routerLink="/features" class="view-all-link">
+            Xem tất cả tính năng <span>→</span>
+        </a>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta">
+    <div class="cta-bg"></div>
+    <div class="container">
+        <div class="cta-content">
+            <h2>Sẵn sàng bắt đầu?</h2>
+            <p>Hãy liên hệ với chúng tôi ngay hôm nay để bắt đầu dự án của bạn</p>
+            <div class="cta-buttons">
+                <a routerLink="/contact" class="btn btn-white btn-lg">Liên hệ ngay</a>
+                <a routerLink="/services" class="btn btn-ghost btn-lg">Xem dịch vụ</a>
+            </div>
+        </div>
+    </div>
+</section>

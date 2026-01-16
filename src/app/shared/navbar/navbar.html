@@ -1,0 +1,26 @@
+<nav class="navbar">
+    <div class="nav-container">
+        <a routerLink="/" class="logo">
+            <span class="logo-icon">🚀</span>
+            <span class="logo-text">TechFlow</span>
+        </a>
+
+        <button class="mobile-toggle" (click)="toggleMenu()">
+            <span class="hamburger" [class.active]="isMenuOpen()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </button>
+
+        <ul class="nav-links" [class.active]="isMenuOpen()">
+            <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Trang chủ</a></li>
+            <li><a routerLink="/features" routerLinkActive="active">Tính năng</a></li>
+            <li><a routerLink="/services" routerLinkActive="active">Dịch vụ</a></li>
+            <li><a routerLink="/about" routerLinkActive="active">Về chúng tôi</a></li>
+            <li><a routerLink="/contact" routerLinkActive="active">Liên hệ</a></li>
+        </ul>
+
+        <a routerLink="/contact" class="btn btn-primary nav-cta">Bắt đầu ngay</a>
+    </div>
+</nav>

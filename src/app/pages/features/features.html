@@ -1,0 +1,44 @@
+<section class="page-hero">
+    <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+    <div class="container">
+        <span class="section-badge">Tính năng</span>
+        <h1>Khám phá các tính năng mạnh mẽ</h1>
+        <p>Chúng tôi cung cấp những giải pháp công nghệ tiên tiến nhất để giúp bạn xây dựng ứng dụng hoàn hảo</p>
+    </div>
+</section>
+
+<section class="features-section">
+    <div class="container">
+        <div class="features-grid">
+            @for (feature of features; track feature.title) {
+            <div class="feature-card" [class.featured]="feature.featured">
+                <div class="feature-icon">
+                    <span>{{ feature.icon }}</span>
+                </div>
+                <h3>{{ feature.title }}</h3>
+                <p>{{ feature.description }}</p>
+                @if (feature.featured) {
+                <div class="feature-badge">Phổ biến</div>
+                }
+            </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="tech-stack">
+    <div class="container">
+        <h2>Công nghệ chúng tôi sử dụng</h2>
+        <div class="tech-grid">
+            @for (tech of technologies; track tech.name) {
+            <div class="tech-card">
+                <span class="tech-icon">{{ tech.icon }}</span>
+                <span class="tech-name">{{ tech.name }}</span>
+            </div>
+            }
+        </div>
+    </div>
+</section>
